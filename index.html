@@ -11,10 +11,39 @@
         <title>Ban Tau | Destroy the oil rig</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <style>
+            .center-div {              
+              margin: auto;
+              top: 20px;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100px;
+              height: 70px;
+              display:block !important;              
+            }
+        </style>
     </head>
     <body style="margin:0px">
-        <canvas id="canvas" style="cursor:none"></canvas>
-        <script src="js/vendor/cocoon.js"></script>
-        <script type="text/javascript" src="js/require.js" data-main="js/main.js"></script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
+        <div>
+            <canvas id="canvas" style="cursor:none"></canvas>
+            <script src="js/vendor/cocoon.js"></script>
+            <script type="text/javascript" src="js/require.js" data-main="js/main.js"></script>
+        </div>
+        <div style="text-align: center">
+            [Space]: Fire Missile
+        </div>
+        <div class="fb-like center-div" data-href="http://leenmie.github.io/bantau/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
+            
+        </div>
     </body>
 </html>
