@@ -8,7 +8,6 @@ require(
     ], 
     function
     (
-
         lib_impact
     ) 
 {
